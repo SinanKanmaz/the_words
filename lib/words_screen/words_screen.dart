@@ -213,13 +213,13 @@ class _MyWordsScreenState extends State<MyWordsScreen> {
                       showCupertinoDialog(
                           context: context,
                           builder: (context) => CupertinoAlertDialog(
-                                title: const Text("add_a_new_word"),
+                                title: const Text("Add a new word"),
                                 content: Form(
                                   key: _formKey,
                                   child: Column(
                                     children: [
                                       CupertinoTextFormFieldRow(
-                                        placeholder: "study_language",
+                                        placeholder: "Study language",
                                         initialValue: _word.studyLanguage,
                                         decoration: const BoxDecoration(
                                           border: Border(
@@ -261,7 +261,7 @@ class _MyWordsScreenState extends State<MyWordsScreen> {
                                 ),
                                 actions: [
                                   CupertinoDialogAction(
-                                    child: const Text("cancel"),
+                                    child: const Text("Cancel"),
                                     onPressed: () => Navigator.pop(context),
                                   ),
                                   CupertinoDialogAction(

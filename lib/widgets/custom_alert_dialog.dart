@@ -13,14 +13,13 @@ class CustomAlertDialog extends StatelessWidget {
   final VoidCallback? reject;
 
   const CustomAlertDialog(
-      {Key? key,
+      {super.key,
       this.title,
       this.body,
       this.accept,
       this.reject,
       this.acceptText,
-      this.rejectText})
-      : super(key: key);
+      this.rejectText});
 
   @override
   Widget build(BuildContext context) {
